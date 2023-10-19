@@ -2,10 +2,9 @@ import React, { useState } from 'react'
 
 function BookingForm({availableTimes, dispatch, submitForm}) {
 
-    var newDate = new Date()
     const [formData, setFormData] = useState({
         fullName: '',
-        date: {newDate},
+        date: '',
         time: '',
         guests: '',
         occasion: ''
@@ -36,6 +35,15 @@ function BookingForm({availableTimes, dispatch, submitForm}) {
         dispatch({type: 'UPDATE', value: new Date(val)})
     }
 
+    const getIsFormValid = () => {
+        return (
+            formData.fullName &&
+            formData.date &&
+            formData.guests.length >= 1 &&
+            formData.guests.length <= 10
+        );
+    };
+
     var today = new Date().toISOString().split('T')[0]; //to not allow days before today to be selected
     return (
         <div className='form-box'>
@@ -44,7 +52,7 @@ function BookingForm({availableTimes, dispatch, submitForm}) {
                 <div className='form-area'>
                     <div className='form-col'>
                         <label htmlFor="full-name">Full Name</label>
-                        <input type="text" placeholder="Enter your full name" id="full-name" value={formData.fullName} onChange={handleFormChange} name='fullName' required/>
+                        <input type="text" placeholder="Enter your full name" id="full-name" value={formData.fullName} onChange={handleFormChange} name='fullName' pattern="[A-Za-z ]" required/>
                         <label htmlFor="res-date">Choose date</label>
                         <input type="date" id="res-date" value={formData.date} onChange={handleFormChangeDate} name='date' min={today} required/>
                         <label htmlFor="res-time">Choose time</label>
@@ -60,7 +68,7 @@ function BookingForm({availableTimes, dispatch, submitForm}) {
                             <option>Birthday</option>
                             <option>Anniversary</option>
                         </select>
-                        <input className='btn' type="submit" value="Book Table Now"/>
+                        <input className={!getIsFormValid() ? "btn btn-disabled" : "btn"} type="submit" value="Book Table Now" disabled={!getIsFormValid()} aria-label='submit form button'/>
                     </div>
                 </div>
             </form>

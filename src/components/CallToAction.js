@@ -10,7 +10,7 @@ function CallToAction() {
         <div className='jumbo-subtitle subtitle'>Chicago</div>
         <div className='jumbo-description leadtext'>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</div>
         <Link to="/booking">
-          <button className='btn'>Reserve a table</button>
+          <button className='btn' aria-label='table reservation button'>Reserve a table</button>
         </Link>
       </div>
       <div className='jumbo-col'>

@@ -10,7 +10,7 @@ function Specials() {
     <div className='specials-cont'>
       <div className='specials-header'>
         <div className='specials-subtitle subtitle'>Specials</div>
-        <button className='btn'>Online Menu</button>
+        <button className='btn' aria-label='order online button'>Online Menu</button>
       </div>
 
       <div className='cards'>

@@ -150,6 +150,7 @@ footer {
   align-self: baseline;
 }
 
+
 /* Card */
 
 .cards {
@@ -218,6 +219,11 @@ footer {
   font-weight: 700;
 }
 
+.btn-disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
 /* Form */
 
 .form-title {
@@ -229,6 +235,12 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #edefee;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  font-family: 'Karla', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .form-area {
@@ -249,7 +261,15 @@ footer {
 
 .form-col input{
   margin-bottom: 1rem;
+}
+
+.form-col input,
+.form-col select {
   border-radius: 0.5rem;
+}
+
+input:focus:invalid {
+  border: 2px solid red;
 }
 
 .form-col >.btn{
@@ -274,6 +294,15 @@ footer {
   gap: 2rem;
 }
 
+.chicago {
+  background-color: white;
+  color: #333;
+}
+
+.chicago-title {
+  color: #495e57;
+}
+
 /* Media queries - desktop first approach */
 
 @media (max-width:1150px) {
@@ -290,6 +319,9 @@ footer {
     gap: 1rem;
   }
 
+  .chicago .jumbo-img{
+    max-width: 400px;
+  }
 }
 
 @media (max-width:850px) {
@@ -305,6 +337,10 @@ footer {
 
   .jumbo-col{
     flex-wrap: wrap;
+  }
+
+  .jumbo-img{
+    max-width: 400px;
   }
 
 }
