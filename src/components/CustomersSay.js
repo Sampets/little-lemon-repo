@@ -13,10 +13,10 @@ function CustomersSay() {
       </div>
 
       <div className='cards'>
-        <Card img={person1} name="Sophia" number="5/5" descr="This restaurant is a hidden gem! The food is amazing and the service is top-notch."></Card>
-        <Card img={person2} name="Maria" number="5/5" descr="I was blown away by the quality of the food. It was fresh, flavorful, and beautifully presented."></Card>
-        <Card img={person3} name="Artemis" number="5/5" descr="I haveve been to this restaurant several times and I am never disappointed."></Card>
-        <Card img={person4} name="Irene" number="5/5" descr="The food was delicious and the service was impeccable.My guests were raving about it all night!"></Card>
+        <Card img={person1} name="Anna" number="⭐⭐⭐⭐⭐" descr="This restaurant is a hidden gem! The food is amazing and the service is top-notch."></Card>
+        <Card img={person2} name="Maria" number="⭐⭐⭐⭐⭐" descr="I was blown away by the quality of the food. It was fresh, flavorful, and beautifully presented."></Card>
+        <Card img={person3} name="Sia" number="⭐⭐⭐⭐⭐" descr="I have been to this restaurant several times and I am never disappointed."></Card>
+        <Card img={person4} name="Irene" number="⭐⭐⭐⭐⭐" descr="The food was delicious and the service was impeccable. My guests were raving about it all night!"></Card>
 
       </div>
     </div>

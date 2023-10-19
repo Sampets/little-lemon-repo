@@ -8,8 +8,7 @@ function CallToAction() {
       <div className='jumbo-col'>
         <div className='jumbo-title title'>Little Lemon</div>
         <div className='jumbo-subtitle subtitle'>Chicago</div>
-        <div className='jumbo-description paragraph'>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        <div className='jumbo-description leadtext'>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</div>
         <Link to="/booking">
           <button className='btn'>Reserve a table</button>
         </Link>

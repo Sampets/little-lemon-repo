@@ -11,17 +11,17 @@ function Footer() {
       <div className='footer-col'>
         <div className='footer-title sectiontitle'>Pages</div>
         <Link to="/">Home</Link>
-        <a href="/">About</a>
-        <a href="/">Menu</a>
+        <Link to="/">About</Link>
+        <Link to="/">Menu</Link>
         <Link to="/booking">Reservations</Link>
-        <a href="/" >Order Online</a>
-        <a href="/">Login</a>
+        <Link to="/">Order Online</Link>
+        <Link to="/">Login</Link>
       </div>
       <div className='footer-col'>
         <div className='footer-title sectiontitle'>Contact us</div>
-        <a href="/">Chicago Str.</a>
-        <a href="/">467-555-9685</a>
-        <a href="/">contact@example.com</a>
+        <div className='footer-info'>Chicago Str.</div>
+        <div className='footer-info'>467-555-9685</div>
+        <a href='mailto:contact@example.com'>contact@example.com</a>
       </div>
       <div className='footer-col'>
         <div className='footer-title sectiontitle'>Our Social Media</div>

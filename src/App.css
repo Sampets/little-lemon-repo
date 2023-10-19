@@ -42,7 +42,6 @@
   font-family: 'Karla', sans-serif;
   font-size: 16pt;
   font-weight: 400;
-  line-height: 1.5;
 }
 
 .highlighttext {
@@ -83,6 +82,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-height: 55vh;
 }
 
 /* Footer */
@@ -103,7 +103,8 @@ footer {
   margin: 1rem 0 1rem 1rem;
 }
 
-.footer-col a {
+.footer-col a,
+.footer-info {
   font-family: 'Karla', sans-serif;
   font-size: 16pt;
   font-weight: 400;
@@ -112,20 +113,22 @@ footer {
   padding: 0.1rem;
 }
 
+.footer-img {
+  display: flex;
+  position: relative;
+}
 
 /* Jumbotron */
 
 .jumbo {
   background-color: #495e57;
   display: flex;
-  flex-wrap: wrap;
   padding: 2em;
 }
 
 .jumbo-col {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 1rem;
   color: white;
 }
@@ -135,14 +138,16 @@ footer {
 }
 
 .jumbo-description {
-  width: 50%;
+  width: 60%;
 }
 
 .jumbo-img {
-  max-width: 250px;
-  max-height: 160px;
+  max-width: 500px;
+  height: auto;
   flex-direction: column;
-  align-self: flex-end;
+  margin: 2rem;
+  border-radius: 1rem;
+  align-self: baseline;
 }
 
 /* Card */
@@ -205,4 +210,108 @@ footer {
 .btn {
   background-color: #f4ce14;
   color: #333;
+  border: none;
+  border-radius: 1em;
+  padding: 1rem;
+  font-family: 'Karla', sans-serif;
+  font-size: 16pt;
+  font-weight: 700;
+}
+
+/* Form */
+
+.form-title {
+  margin: 1rem;
+  text-align: center;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-area {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.form-col{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-col label{
+  margin-top: 1rem;
+}
+
+.form-col input{
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+
+.form-col >.btn{
+  margin: 0;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  font-size: 10pt;
+}
+
+.confirmed {
+  display: flex;
+  background-color: #edefee;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.confirmed-links {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+/* Media queries - desktop first approach */
+
+@media (max-width:1150px) {
+
+  header {
+    flex-direction: column;
+  }
+
+  nav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    gap: 1rem;
+  }
+
+}
+
+@media (max-width:850px) {
+
+  .jumbo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .jumbo-description{
+    width: 100%;
+  }
+
+  .jumbo-col{
+    flex-wrap: wrap;
+  }
+
+}
+
+@media (max-width:650px) {
+
+  .jumbo-img{
+    max-width: 300px;
+  }
 }
