@@ -9,11 +9,9 @@ import Homepage from './pages/Homepage';
 function App() {
   return (
     <>
-      <Header></Header>
-      <Routes>
-        <Route path="/" element={<Homepage />}></Route>
-      </Routes>
-      <Footer></Footer>
+      <Header />
+      <Main />
+      <Footer />
     </>
   );
 }

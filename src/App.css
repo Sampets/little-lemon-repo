@@ -1,43 +1,208 @@
-/* .App {
-  text-align: center;
+/* from branding - UI kit*/
+/* @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;800&family=Markazi+Text:wght@400;500&display=swap'); */
+
+.title {
+  font-family: 'Markazi Text', serif;
+  font-size: 64pt;
+  font-weight: 500;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.subtitle {
+  font-family: 'Markazi Text', serif;
+  font-size: 40pt;
+  font-weight: 400;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.leadtext {
+  font-family: 'Karla', sans-serif;
+  font-size: 18pt;
+  font-weight: 500;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.sectiontitle {
+  font-family: 'Karla', sans-serif;
+  font-size: 20pt;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
-.App-link {
-  color: #61dafb;
+.sectioncat {
+  font-family: 'Karla', sans-serif;
+  font-size: 16pt;
+  font-weight: 800;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+.cardtitle {
+  font-family: 'Karla', sans-serif;
+  font-size: 18pt;
+  font-weight: 700;
+}
+
+.paragraphtext {
+  font-family: 'Karla', sans-serif;
+  font-size: 16pt;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.highlighttext {
+  font-family: 'Karla', sans-serif;
+  font-size: 16pt;
+  font-weight: 500;
+}
+
+
+/**/
 
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  padding: 20px;
+  margin: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 20px;
+  color: black;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #fbdabb;
+  margin-top: 30px;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0 1rem 1rem;
+}
+
+.footer-col a {
+  font-family: 'Karla', sans-serif;
+  font-size: 16pt;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+  padding: 0.1rem;
+}
+
+
+/* Jumbotron */
+
+.jumbo {
+  background-color: #495e57;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em;
+}
+
+.jumbo-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  color: white;
+}
+
+.jumbo-title {
+  color: #f4ce14;
+}
+
+.jumbo-description {
+  width: 50%;
+}
+
+.jumbo-img {
+  max-width: 250px;
+  max-height: 160px;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
+/* Card */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #edefee;
+  width: 15rem;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+.card-img{
+  width: 100%;
+  max-height: 160px;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card-toprow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-toprow, .card-midrow{
+    margin: 1rem;
+}
+
+.card-number {
+  color: #ee9972;
+}
+
+/* Specials */
+.specials-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+/* Customers */
+
+.customers-title {
+  text-align: center;
+  margin: 1rem;
+}
+
+.specials-cont, .customers-cont {
+  margin: 1rem;
+}
+
+/* Button */
+
+.btn {
+  background-color: #f4ce14;
+  color: #333;
 }

@@ -1,16 +1,16 @@
 import React from 'react'
-import { Routes, Route, Link } from "react-router-dom";
-import Homepage from '../pages/Homepage';
-import BookingPage from '../pages/BookingPage';
-
+import { Link } from "react-router-dom";
 
 function Nav() {
   return (
-    <Routes> 
-        <Route path="/" element={<Homepage />}></Route>
-        <Route path="/booking" element={<BookingPage />}></Route>
-    </Routes>
-
+    <nav>
+        <Link to="/" className="nav-item">Home</Link>
+        <a href="/">About</a>
+        <a href="/">Menu</a>
+        <Link to="/booking" className="nav-item">Reservations</Link>
+        <a href="/">Order Online</a>
+        <a href="/">Login</a>
+    </nav>
   )
 }
 
